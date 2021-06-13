@@ -3,3 +3,8 @@
 .dropdown {
   margin-left: $layout-padding;
 }
+
+.dropdown-item:hover {
+  background-color: #f0f;
+  border-radius: 5px;
+}

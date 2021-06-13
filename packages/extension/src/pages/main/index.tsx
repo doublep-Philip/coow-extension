@@ -115,7 +115,10 @@ export const MainPage: FunctionComponent = observer(() => {
       }
     >
       <BIP44SelectModal />
-      <Card className={classnames(style.card, "shadow")}>
+      <Card
+        className={classnames(style.card, "shadow")}
+        style={{ background: "#0d071d" }}
+      >
         <CardBody>
           <div className={style.containerAccountInner}>
             <AccountView />
@@ -125,19 +128,28 @@ export const MainPage: FunctionComponent = observer(() => {
         </CardBody>
       </Card>
       {chainStore.current.walletUrlForStaking ? (
-        <Card className={classnames(style.card, "shadow")}>
+        <Card
+          className={classnames(style.card, "shadow")}
+          style={{ background: "#0d071d" }}
+        >
           <CardBody>
             <StakeView />
           </CardBody>
         </Card>
       ) : null}
       {hasTokens ? (
-        <Card className={classnames(style.card, "shadow")}>
+        <Card
+          className={classnames(style.card, "shadow")}
+          style={{ background: "0d071d" }}
+        >
           <CardBody>{<TokensView />}</CardBody>
         </Card>
       ) : null}
       {chainStore.current.features?.includes("ibc-transfer") ? (
-        <Card className={classnames(style.card, "shadow")}>
+        <Card
+          className={classnames(style.card, "shadow")}
+          style={{ background: "#0d071d" }}
+        >
           <CardBody>
             <IBCTransferView />
           </CardBody>

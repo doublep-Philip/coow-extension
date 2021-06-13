@@ -139,7 +139,13 @@ export const AdvancedBIP44Option: FunctionComponent<{
             <Input
               type="number"
               className="form-control-alternative"
-              style={{ width: "100px", textAlign: "right" }}
+              style={{
+                width: "100px",
+                textAlign: "right",
+                background: "#0d071d",
+                color: "#f0f",
+                border: "1px solid #f0f",
+              }}
               value={bip44Option.account.toString()}
               onChange={(e) => {
                 e.preventDefault();
@@ -170,7 +176,13 @@ export const AdvancedBIP44Option: FunctionComponent<{
             <Input
               type="number"
               className="form-control-alternative"
-              style={{ width: "100px", textAlign: "right" }}
+              style={{
+                width: "100px",
+                textAlign: "right",
+                background: "#0d071d",
+                color: "#f0f",
+                border: "1px solid #f0f",
+              }}
               value={bip44Option.change.toString()}
               onChange={(e) => {
                 e.preventDefault();
@@ -204,7 +216,13 @@ export const AdvancedBIP44Option: FunctionComponent<{
             <Input
               type="number"
               className="form-control-alternative"
-              style={{ width: "100px", textAlign: "right" }}
+              style={{
+                width: "100px",
+                textAlign: "right",
+                background: "#0d071d",
+                color: "#f0f",
+                border: "1px solid #f0f",
+              }}
               value={bip44Option.index.toString()}
               onChange={(e) => {
                 e.preventDefault();

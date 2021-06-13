@@ -25,7 +25,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 }
 
 $font-family-base: "Nunito Sans", sans-serif;
-$body-color: black;
+$body-color: #f0f;
 @import "../../../../node_modules/argon-dashboard-react/src/assets/scss/argon-dashboard-react";
 
 @import url("https://fonts.googleapis.com/css?family=Courier+Prime&display=swap");
@@ -36,7 +36,7 @@ html {
   width: $popup-size-width;
   height: $popup-size-height;
   margin: auto;
-  background-color: white;
+  background-color: #0d071d;
 
   overflow: auto;
 }
@@ -77,10 +77,10 @@ body {
 }
 
 .form-control {
-  color: black;
+  color: #0d071d;
 
   &:focus {
-    color: black;
+    color: #0d071d;
   }
 }
 
@@ -95,7 +95,7 @@ button[data-loading="true"] {
 
     -webkit-animation: spinAround 0.5s infinite linear;
     animation: spinAround 0.5s infinite linear;
-    border: 2px solid #dbdbdb;
+    border: 2px solid #f0f;
     border-radius: 290486px;
     border-right-color: transparent;
     border-top-color: transparent;

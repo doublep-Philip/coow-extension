@@ -13,7 +13,7 @@
     font-size: 14px;
     letter-spacing: -0.31px;
     text-align: center;
-    color: #4a4a4a;
+    color: #847bff;
   }
 
   .fiat {
@@ -32,7 +32,7 @@
     text-align: center;
 
     letter-spacing: -0.4px;
-    color: #8f8f8f;
+    color: #847bff;
   }
 
   :global(.popper) {
@@ -43,6 +43,7 @@
 
 .container-chart {
   position: relative;
+  background-color: #0d071d;
 
   .center-text {
     position: absolute;
@@ -54,12 +55,12 @@
 
     .big {
       font-size: 13px;
-      color: #32325d;
+      color: #847bff;
     }
 
     .small {
       font-size: 20px;
-      color: #32325d;
+      color: #847bff;
       font-weight: bold;
     }
 

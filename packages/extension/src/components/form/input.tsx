@@ -51,13 +51,22 @@ export const Input = forwardRef<
   return (
     <FormGroup>
       {label ? (
-        <Label for={inputId} className="form-control-label">
+        <Label
+          for={inputId}
+          className="form-control-label"
+          style={{ color: "#00FFFF" }}
+        >
           {label}
         </Label>
       ) : null}
       <InputGroup>
         <ReactStrapInput
           id={inputId}
+          style={{
+            color: "#00FFFF",
+            background: "#0d071d",
+            border: "1px solid #f0f",
+          }}
           className={classnames(
             "form-control-alternative",
             props.className,

@@ -165,13 +165,30 @@ export const AddressBookPage: FunctionComponent<{
           <div className={styleAddressBook.innerTopContainer}>
             {hideChainDropdown ? null : (
               <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-                <DropdownToggle caret style={{ boxShadow: "none" }}>
+                <DropdownToggle
+                  caret
+                  style={{
+                    color: "#f0f",
+                    background: "#0d071d",
+                    border: "none",
+                    boxShadow:
+                      "rgba(255, 0, 255, 0.16) 0px 10px 36px 0px, rgba(255, 0, 255, 0.06) 0px 0px 0px 1px",
+                  }}
+                >
                   {chainStore.getChain(selectedChainId).chainName}
                 </DropdownToggle>
-                <DropdownMenu>
+                <DropdownMenu
+                  style={{
+                    background: " #0d071d",
+                    boxShadow:
+                      "rgba(255, 0, 255, 0.16) 0px 10px 36px 0px, rgba(255, 0, 255, 0.06) 0px 0px 0px 1px",
+                  }}
+                >
                   {chainStore.chainInfos.map((chainInfo) => {
                     return (
                       <DropdownItem
+                        className={styleAddressBook.dropdownItem}
+                        style={{ boxShadow: "none", color: "#00FFFF" }}
                         key={chainInfo.chainId}
                         onClick={() => {
                           setSelectedChainId(chainInfo.chainId);
@@ -193,8 +210,12 @@ export const AddressBookPage: FunctionComponent<{
               }}
             >
               <Button
-                color="primary"
                 size="sm"
+                style={{
+                  color: "#00FFFF",
+                  border: "1px solid #00FFFF",
+                  background: "#0d071d",
+                }}
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
@@ -204,7 +225,11 @@ export const AddressBookPage: FunctionComponent<{
               >
                 <i
                   className="fas fa-plus"
-                  style={{ marginRight: "4px", fontSize: "8px" }}
+                  style={{
+                    marginRight: "4px",
+                    fontSize: "8px",
+                    color: "#00FFFF",
+                  }}
                 />
                 <FormattedMessage id="setting.address-book.button.add" />
               </Button>
@@ -237,7 +262,9 @@ export const AddressBookPage: FunctionComponent<{
                       onBackButton();
                     }
                   }}
-                  style={{ cursor: selectHandler ? undefined : "auto" }}
+                  style={{
+                    cursor: selectHandler ? undefined : "auto",
+                  }}
                 />
               );
             })}

@@ -25,11 +25,11 @@
 }
 
 .address-book-button {
-  background: white;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-width: 0;
-
+  color: #00ffff;
+  background: #847bff;
   box-shadow: $input-alternative-box-shadow !important;
 
   &:hover {

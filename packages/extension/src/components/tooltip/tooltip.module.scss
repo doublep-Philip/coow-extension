@@ -14,7 +14,7 @@ $bright: rgba(255, 255, 255, 0.75);
     background-color: $dark;
     padding: 4px;
     border-radius: 6px;
-    color: white;
+    color: #f0f;
 
     z-index: 1000;
     transition: opacity 0.45s;
@@ -39,7 +39,7 @@ $bright: rgba(255, 255, 255, 0.75);
   :global {
     .popper {
       background-color: $bright;
-      color: black;
+      color: #f0f;
     }
 
     .popper[x-placement="bottom"] [x-arrow] {

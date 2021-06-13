@@ -2,6 +2,7 @@ import React, { FunctionComponent, useMemo, useState } from "react";
 import { HeaderLayout } from "../../../layouts";
 
 import style from "../style.module.scss";
+import styleAddressBook from "./style.module.scss";
 import { useHistory } from "react-router";
 import { observer } from "mobx-react-lite";
 import { useStore } from "../../../stores";
@@ -54,13 +55,30 @@ export const SettingConnectionsPage: FunctionComponent = observer(() => {
           toggle={toggle}
           className={styleConnections.dropdown}
         >
-          <DropdownToggle caret style={{ boxShadow: "none" }}>
+          <DropdownToggle
+            caret
+            style={{
+              color: "#f0f",
+              background: "#0d071d",
+              border: "none",
+              boxShadow:
+                "rgba(255, 0, 255, 0.16) 0px 10px 36px 0px, rgba(255, 0, 255, 0.06) 0px 0px 0px 1px",
+            }}
+          >
             {chainStore.getChain(selectedChainId).chainName}
           </DropdownToggle>
-          <DropdownMenu>
+          <DropdownMenu
+            style={{
+              background: " #0d071d",
+              boxShadow:
+                "rgba(255, 0, 255, 0.16) 0px 10px 36px 0px, rgba(255, 0, 255, 0.06) 0px 0px 0px 1px",
+            }}
+          >
             {chainStore.chainInfos.map((chainInfo) => {
               return (
                 <DropdownItem
+                  className={styleAddressBook.dropdownItem}
+                  style={{ boxShadow: "none", color: "#00FFFF" }}
                   key={chainInfo.chainId}
                   onClick={(e) => {
                     e.preventDefault();

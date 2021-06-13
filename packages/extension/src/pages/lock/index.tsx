@@ -40,7 +40,7 @@ export const LockPage: FunctionComponent = observer(() => {
   });
 
   return (
-    <EmptyLayout style={{ backgroundColor: "white", height: "100%" }}>
+    <EmptyLayout style={{ backgroundColor: "#0d071d", height: "100%" }}>
       <Form
         className={style.formContainer}
         onSubmit={handleSubmit(async (data) => {
@@ -79,9 +79,16 @@ export const LockPage: FunctionComponent = observer(() => {
         <Banner
           icon={require("../../public/assets/temp-icon.svg")}
           logo={require("../../public/assets/logo-temp.png")}
-          subtitle="Wallet for the Interchain"
+          subtitle="Decentralized Storage Network"
         />
         <Input
+          style={{
+            color: "#f0f",
+            background: "black",
+            border: "1px solid #f0f",
+            // boxShadow:
+            //   "rgba(255, 0, 255, 0.16) 0px 10px 36px 0px, rgba(255, 0, 255, 0.06) 0px 0px 0px 1px",
+          }}
           type="password"
           label={intl.formatMessage({
             id: "lock.input.password",
@@ -94,7 +101,13 @@ export const LockPage: FunctionComponent = observer(() => {
             }),
           })}
         />
-        <Button type="submit" color="primary" block data-loading={loading}>
+        <Button
+          type="submit"
+          color="primary"
+          block
+          data-loading={loading}
+          style={{ color: "black", backgroundColor: "#847bff" }}
+        >
           <FormattedMessage id="lock.button.unlock" />
         </Button>
       </Form>

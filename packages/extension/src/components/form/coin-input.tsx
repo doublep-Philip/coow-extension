@@ -139,13 +139,29 @@ export const CoinInput: FunctionComponent<CoinInputProps> = observer(
             toggle={() => setIsOpenTokenSelector((value) => !value)}
             disabled={isAllBalanceMode}
           >
-            <DropdownToggle caret>
+            <DropdownToggle
+              caret
+              style={{
+                color: "#f0f",
+                background: "#0d071d",
+                border: "none",
+                boxShadow:
+                  "rgba(255, 0, 255, 0.16) 0px 10px 36px 0px, rgba(255, 0, 255, 0.06) 0px 0px 0px 1px",
+              }}
+            >
               {amountConfig.sendCurrency.coinDenom}
             </DropdownToggle>
-            <DropdownMenu>
+            <DropdownMenu
+              style={{
+                background: " #0d071d",
+                boxShadow:
+                  "rgba(255, 0, 255, 0.16) 0px 10px 36px 0px, rgba(255, 0, 255, 0.06) 0px 0px 0px 1px",
+              }}
+            >
               {amountConfig.sendableCurrencies.map((currency) => {
                 return (
                   <DropdownItem
+                    style={{ boxShadow: "none", color: "#00FFFF" }}
                     key={currency.coinMinimalDenom}
                     active={
                       currency.coinMinimalDenom ===

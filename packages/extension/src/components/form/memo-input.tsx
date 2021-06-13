@@ -26,7 +26,11 @@ export const MemoInput: FunctionComponent<MemoInputProps> = observer(
     return (
       <FormGroup className={className}>
         {label ? (
-          <Label for={inputId} className="form-control-label">
+          <Label
+            for={inputId}
+            className="form-control-label"
+            style={{ color: "#00FFFF" }}
+          >
             {label}
           </Label>
         ) : null}
@@ -35,7 +39,12 @@ export const MemoInput: FunctionComponent<MemoInputProps> = observer(
           className="form-control-alternative"
           type="textarea"
           rows={rows ? rows : 2}
-          style={{ resize: "none" }}
+          style={{
+            resize: "none",
+            color: "#00FFFF",
+            background: "#0d071d",
+            border: "1px solid #f0f",
+          }}
           value={memoConfig.memo}
           onChange={(e) => {
             memoConfig.setMemo(e.target.value);

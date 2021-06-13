@@ -17,17 +17,19 @@
 .token-selector {
   width: 100%;
   height: 46px;
+  color: #f0f;
 
   button {
     width: 100%;
 
-    background: white;
+    background: black;
     text-align: left;
     font-weight: normal;
+    color: #f0f;
   }
 
   :global(.dropdown-toggle) {
-    box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02) !important;
+    // box-shadow: 0 1px 3px rgba(50, 50, 93, 0.15), 0 1px 0 rgba(0, 0, 0, 0.02) !important;
 
     &::after {
       border-radius: 2px;
@@ -55,8 +57,9 @@
 
   &:global(.disabled) {
     button {
-      background: #e9ecef;
-      border-color: #e9ecef;
+      background: #0d071d;
+      border-color: #0d071d;
+      color: #f0f;
     }
   }
 }
@@ -64,7 +67,7 @@
 .balance {
   float: right;
   font-weight: normal;
-  color: #555555;
+  color: #f0f;
 
   &.clickable {
     cursor: pointer;
@@ -78,4 +81,10 @@
       color: black;
     }
   }
+}
+
+.caret {
+  border-bottom-color: #ffffff;
+  border-top-color: #ffffff;
+  color: #f0f;
 }

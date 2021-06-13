@@ -127,7 +127,7 @@ export const SignPage: FunctionComponent = observer(() => {
             }
           : undefined
       }
-      style={{ background: "white" }}
+      style={{ background: "black" }}
     >
       {
         /*

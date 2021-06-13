@@ -42,7 +42,11 @@ export const SetKeyRingPage: FunctionComponent = observer(() => {
             }}
           >
             <Button
-              color="primary"
+              style={{
+                color: "#00FFFF",
+                border: "1px solid #00FFFF",
+                background: "#0d071d",
+              }}
               size="sm"
               onClick={(e) => {
                 e.preventDefault();
@@ -147,6 +151,7 @@ const KeyRingToolsIcon: FunctionComponent<{
         isOpen={isOpen}
         toggle={toggleOpen}
         placement="bottom"
+        style={{ background: "black" }}
       >
         <PopoverBody
           onClick={(e) => {
@@ -159,6 +164,7 @@ const KeyRingToolsIcon: FunctionComponent<{
           {keyStore.type === "mnemonic" || keyStore.type === "privateKey" ? (
             <div
               style={{ cursor: "pointer" }}
+              className={style.formattedMessage}
               onClick={(e) => {
                 e.preventDefault();
                 e.stopPropagation();
@@ -177,6 +183,7 @@ const KeyRingToolsIcon: FunctionComponent<{
           ) : null}
           <div
             style={{ cursor: "pointer" }}
+            className={style.formattedMessage}
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -188,6 +195,7 @@ const KeyRingToolsIcon: FunctionComponent<{
           </div>
           <div
             style={{ cursor: "pointer" }}
+            className={style.formattedMessage}
             onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();

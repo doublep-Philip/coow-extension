@@ -35,7 +35,7 @@ const LazyDoughnut = React.lazy(async () => {
       ctx.arc(round.x, round.y, round.radius, 0, 2 * Math.PI);
       ctx.closePath();
       ctx.lineWidth = round.thickness * 2;
-      ctx.strokeStyle = "#f4f5f7";
+      ctx.strokeStyle = "#f0f";
       ctx.stroke();
       ctx.restore();
     },

@@ -39,7 +39,11 @@ export const TextArea = forwardRef<
   return (
     <FormGroup>
       {label ? (
-        <Label for={inputId} className="form-control-label">
+        <Label
+          for={inputId}
+          className="form-control-label"
+          style={{ color: "#00FFFF" }}
+        >
           {label}
         </Label>
       ) : null}

@@ -77,7 +77,7 @@ export const RegisterPage: FunctionComponent = observer(() => {
   return (
     <EmptyLayout
       className={style.container}
-      style={{ height: "100%", backgroundColor: "white", padding: 0 }}
+      style={{ height: "100%", backgroundColor: " #0d071d", padding: 0 }}
     >
       <div className={style.logoContainer}>
         <img
@@ -91,7 +91,9 @@ export const RegisterPage: FunctionComponent = observer(() => {
             src={require("../../public/assets/logo-temp.png")}
             alt="logo"
           />
-          <div className={style.paragraph}>Wallet for the Interchain</div>
+          <div className={style.paragraph} style={{ marginTop: "10px" }}>
+            Decentralized Storage Network
+          </div>
         </div>
       </div>
       {registerConfig.render()}

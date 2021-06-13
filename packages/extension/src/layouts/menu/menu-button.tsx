@@ -6,7 +6,7 @@ const Path: FunctionComponent<MotionProps | { d: string }> = (props) => (
   <motion.path
     fill="transparent"
     strokeWidth="2"
-    stroke="hsl(0, 0%, 18%)"
+    stroke="hsl(300, 100%, 50%)"
     strokeLinecap="round"
     {...props}
   />

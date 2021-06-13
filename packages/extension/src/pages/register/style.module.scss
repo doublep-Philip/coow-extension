@@ -4,7 +4,7 @@ $container-width: 420px;
 
 :global(body)[data-centered="true"] {
   height: 85vh;
-  background-color: white;
+  background-color: #0d071d;
 
   overflow: visible !important;
 
@@ -25,7 +25,7 @@ $container-width: 420px;
 
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #0d071d;
 
   :global(.btn) {
     margin-left: 0;
@@ -76,15 +76,19 @@ $container-width: 420px;
     font-size: 16px;
     letter-spacing: -0.36px;
 
+    color: #f0f;
+    background: #0d071d;
     padding: 20px 30px;
     text-align: center;
 
     &:read-only {
-      background-color: white;
+      color: #f0f;
+      background: #0d071d;
     }
 
     &[readonly] {
-      background-color: white;
+      color: #f0f;
+      background: #0d071d;
     }
   }
 
@@ -101,6 +105,7 @@ $container-width: 420px;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #f0f;
   }
 }
 
@@ -121,5 +126,20 @@ $container-width: 420px;
   button {
     margin-bottom: 8px;
     margin-left: 0 !important;
+    color: #f0f;
+    background: #0d071d;
+    box-shadow: 0 2px 16px 0 rgba(255, 0, 255, 0.03),
+      0 2px 15px 0 rgba(255, 0, 255, 0.08);
+    border: none;
+  }
+
+  button:hover {
+    margin-bottom: 8px;
+    margin-left: 0 !important;
+    color: #f0f;
+    background: #0d071d;
+    box-shadow: 0 2px 16px 0 rgba(255, 0, 255, 0.03),
+      0 2px 15px 0 rgba(255, 0, 255, 0.08);
+    border: none;
   }
 }

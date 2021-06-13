@@ -90,6 +90,7 @@ export const AddAddressModal: FunctionComponent<{
           <Button
             type="submit"
             color="primary"
+            style={{ color: "black", backgroundColor: "#847bff" }}
             disabled={
               !name ||
               recipientConfig.getError() != null ||

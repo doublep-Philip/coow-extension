@@ -32,7 +32,7 @@ export const WarningView: FunctionComponent<{
           <Button
             size="sm"
             style={{ float: "right", marginTop: "10px" }}
-            color="white"
+            color="black"
             outline
             onClick={onBackUpMnemonicButtonClick}
           >

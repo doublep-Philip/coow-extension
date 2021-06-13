@@ -125,7 +125,13 @@ export const AddressInput: FunctionComponent<AddressInputProps> = observer(
         </Modal>
         <FormGroup className={className}>
           {label ? (
-            <Label for={inputId} className="form-control-label">
+            <Label
+              for={inputId}
+              className="form-control-label"
+              style={{
+                color: "#00FFFF",
+              }}
+            >
               {label}
             </Label>
           ) : null}
@@ -143,6 +149,11 @@ export const AddressInput: FunctionComponent<AddressInputProps> = observer(
               }}
               autoComplete="off"
               disabled={disabled}
+              style={{
+                color: "#00FFFF",
+                background: "#0d071d",
+                border: "1px solid #f0f",
+              }}
             />
             {!disableAddressBook && memoConfig ? (
               <Button
