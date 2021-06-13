@@ -19,9 +19,6 @@
     "ci-publish": "yarn clean && yarn install --frozen-lockfile && lerna run build --ignore @keplr/extension && lerna publish from-git --yes",
     "pre-commit": "lint-staged"
   },
-  "pre-commit": [
-    "pre-commit"
-  ],
   "lint-staged": {
     "*": [
       "eslint",
