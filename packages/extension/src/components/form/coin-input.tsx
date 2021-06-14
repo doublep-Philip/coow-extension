@@ -126,7 +126,7 @@ export const CoinInput: FunctionComponent<CoinInputProps> = observer(
           <Label
             for={`selector-${randomId}`}
             className="form-control-label"
-            style={{ width: "100%" }}
+            style={{ width: "100%", color: "#00ffff" }}
           >
             <FormattedMessage id="component.form.coin-input.token.label" />
           </Label>
@@ -161,7 +161,11 @@ export const CoinInput: FunctionComponent<CoinInputProps> = observer(
               {amountConfig.sendableCurrencies.map((currency) => {
                 return (
                   <DropdownItem
-                    style={{ boxShadow: "none", color: "#00FFFF" }}
+                    className={styleCoinInput.dropdownItem}
+                    style={{
+                      color: "#00FFFF",
+                      background: " #0d071d",
+                    }}
                     key={currency.coinMinimalDenom}
                     active={
                       currency.coinMinimalDenom ===
@@ -185,7 +189,7 @@ export const CoinInput: FunctionComponent<CoinInputProps> = observer(
             <Label
               for={`input-${randomId}`}
               className="form-control-label"
-              style={{ width: "100%" }}
+              style={{ width: "100%", color: "#00ffff" }}
             >
               {label}
               {!disableAllBalance ? (

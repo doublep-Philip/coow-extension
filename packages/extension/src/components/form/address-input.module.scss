@@ -27,9 +27,10 @@
 .address-book-button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border-width: 0;
+  // border-width: 0;
   color: #00ffff;
-  background: #847bff;
+  border: 1px solid #00ffff;
+  background: #0d071d;
   box-shadow: $input-alternative-box-shadow !important;
 
   &:hover {

@@ -96,10 +96,17 @@ export const DetailsTab: FunctionComponent<{
         <Label
           for="signing-messages"
           className="form-control-label"
-          style={{ display: "flex" }}
+          style={{ display: "flex", color: "#00ffff" }}
         >
           <FormattedMessage id="sign.list.messages.label" />
-          <Badge className="ml-2" color="primary">
+          <Badge
+            className="ml-2"
+            style={{
+              background: "transparent",
+              color: "#00ffff",
+              border: "1px solid #f0f",
+            }}
+          >
             {msgs.length}
           </Badge>
         </Label>
@@ -114,11 +121,15 @@ export const DetailsTab: FunctionComponent<{
           />
         ) : (
           <React.Fragment>
-            <Label for="memo" className="form-control-label">
+            <Label
+              for="memo"
+              className="form-control-label"
+              style={{ color: "#00ffff" }}
+            >
               <FormattedMessage id="sign.info.memo" />
             </Label>
             <div id="memo" style={{ marginBottom: "8px" }}>
-              <div style={{ color: memoConfig.memo ? undefined : "#AAAAAA" }}>
+              <div style={{ color: "#f0f" ? undefined : "#AAAAAA" }}>
                 {memoConfig.memo
                   ? memoConfig.memo
                   : intl.formatMessage({ id: "sign.info.warning.empty-memo" })}
@@ -136,7 +147,11 @@ export const DetailsTab: FunctionComponent<{
           />
         ) : feeConfig.fee ? (
           <React.Fragment>
-            <Label for="fee-price" className="form-control-label">
+            <Label
+              for="fee-price"
+              className="form-control-label"
+              style={{ color: "#00ffff" }}
+            >
               <FormattedMessage id="sign.info.fee" />
             </Label>
             <div id="fee-price">

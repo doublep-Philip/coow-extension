@@ -95,7 +95,7 @@ export class AccountStoreInner {
       send: {
         native: {
           type: "cosmos-sdk/MsgSend",
-          gas: 80000,
+          gas: 100000,
         },
         cw20: {
           gas: 250000,

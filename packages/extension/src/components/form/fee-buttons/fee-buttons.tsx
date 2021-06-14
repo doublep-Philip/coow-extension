@@ -170,7 +170,11 @@ export const FeeButtonsInner: FunctionComponent<
     return (
       <FormGroup style={{ position: "relative" }}>
         {label ? (
-          <Label for={inputId} className="form-control-label">
+          <Label
+            for={inputId}
+            className="form-control-label"
+            style={{ color: "#00ffff" }}
+          >
             {label}
           </Label>
         ) : null}
@@ -270,7 +274,11 @@ export const FeeButtonsInner: FunctionComponent<
         <div style={{ position: "absolute", right: 0 }}>
           <Button
             size="sm"
-            color="link"
+            style={{
+              color: "#00ffff",
+              background: "transparent",
+              border: "none",
+            }}
             onClick={(e) => {
               e.preventDefault();
               feeButtonState.setIsGasInputOpen(!feeButtonState.isGasInputOpen);

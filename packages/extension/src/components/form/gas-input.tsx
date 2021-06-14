@@ -22,11 +22,20 @@ export const GasInput: FunctionComponent<GasInputProps> = observer(
     return (
       <FormGroup className={className}>
         {label ? (
-          <Label for={inputId} className="form-control-label">
+          <Label
+            for={inputId}
+            className="form-control-label"
+            style={{ color: "#00ffff" }}
+          >
             {label}
           </Label>
         ) : null}
         <Input
+          style={{
+            color: "#00ffff",
+            background: "#0d071d",
+            border: "1px solid #f0f",
+          }}
           id={inputId}
           className="form-control-alternative"
           type="number"
