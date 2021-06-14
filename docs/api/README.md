@@ -115,7 +115,7 @@ getKey(chainId: string): Promise<{
     algo: string;
     pubKey: Uint8Array;
     address: Uint8Array;
-    bech32Address: string;
+    dress: string;
 }>
 ```
 
@@ -128,7 +128,7 @@ If the webpage has permission and Keplr is unlocked, this function will return t
     algo: string;
     pubKey: Uint8Array;
     address: Uint8Array;
-    bech32Address: string;
+    dress: string;
 }
 ```
 
