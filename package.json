@@ -1,6 +1,6 @@
 {
-  "name": "keplr",
-  "description": "Keplr is a browser extension wallet for the Inter blockchain ecosystem.",
+  "name": "Bluzelle",
+  "description": "Bluzelle is a browser extension wallet for the Bluzelle Network.",
   "private": true,
   "workspaces": [
     "packages/*"
