@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Bluzelle",
+  "name": "Curium",
   "description": "Browser extension wallet for the Bluzelle network.",
   "version": "0.8.8",
 
@@ -13,7 +13,7 @@
 
   "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "Bluzelle"
+    "default_title": "Curium"
   },
   "background": {
     "scripts": ["browser-polyfill.js", "background.bundle.js"],

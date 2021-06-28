@@ -1,8 +1,8 @@
-# Bluzelle Browser Extension
+# Curium Browser Extension
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Twitter: chainapsis](https://img.shields.io/twitter/follow/chainapsis.svg?style=social)](https://twitter.com/chainapsis)
 
-> Bluzelle is a browser extension wallet for the Bluzelle Network.
+> Curium is a browser extension wallet for the Curium Network.
 >
 This repository is still under development  
 
@@ -15,7 +15,6 @@ From the root folder run the following commands
 ```sh
 yarn install
 yarn build
-yarn dev
 ``` 
 Go to `chrome://extensions/ `in google chrome and ensure that "developer mode" is turned on in the top right corner.
 

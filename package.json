@@ -1,6 +1,6 @@
 {
-  "name": "Bluzelle",
-  "description": "Bluzelle is a browser extension wallet for the Bluzelle Network.",
+  "name": "Curium",
+  "description": "Curium is a browser extension wallet for the Bluzelle Network.",
   "private": true,
   "workspaces": [
     "packages/*"

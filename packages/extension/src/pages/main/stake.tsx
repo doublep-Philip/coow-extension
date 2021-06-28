@@ -188,7 +188,7 @@ export const StakeView: FunctionComponent = observer(() => {
           >
             <FormattedMessage id="main.stake.button.stake" />
           </Button>
-          {!isStakableExist ? (
+          {!isStakableExist && !stakeBtnRef? (
             <Tooltip
               placement="bottom"
               isOpen={tooltipOpen}
