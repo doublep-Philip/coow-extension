@@ -24,7 +24,7 @@ export const StakeView: FunctionComponent = observer(() => {
 
   const notification = useNotification();
 
-  const inflation = queries.getQueryInflation();
+  // const inflation = queries.getQueryInflation();
   const rewards = queries
     .getQueryRewards()
     .getQueryBech32Address(accountInfo.bech32Address);
@@ -144,7 +144,7 @@ export const StakeView: FunctionComponent = observer(() => {
               styleStake.paragraphSub
             )}
           >
-            <FormattedMessage
+            {/* <FormattedMessage
               id="main.stake.message.earning"
               values={{
                 apr: (
@@ -158,7 +158,7 @@ export const StakeView: FunctionComponent = observer(() => {
                   </React.Fragment>
                 ),
               }}
-            />
+            /> */}
           </p>
         </div>
         <div style={{ flex: 1 }} />
