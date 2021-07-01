@@ -147,6 +147,7 @@ const KeyRingToolsIcon: FunctionComponent<{
   return (
     <React.Fragment>
       <Popover
+        id={tooltipId}
         target={tooltipId}
         isOpen={isOpen}
         toggle={toggleOpen}

@@ -153,7 +153,7 @@ export const TxButtonView: FunctionComponent = observer(() => {
       >
         <FormattedMessage id="main.account.button.send" />
       </Button>
-      {!hasAssets && !sendBtnRef? (
+      {!hasAssets? (
         <Tooltip
           placement="bottom"
           isOpen={tooltipOpen}
