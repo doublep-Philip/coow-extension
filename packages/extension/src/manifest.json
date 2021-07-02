@@ -19,7 +19,7 @@
     "scripts": ["browser-polyfill.js", "background.bundle.js"],
     "persistent": true
   },
-  "permissions": ["storage", "notifications", "identity"],
+  "permissions": ["activeTab", "storage", "notifications", "identity"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
