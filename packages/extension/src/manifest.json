@@ -19,23 +19,16 @@
     "scripts": ["browser-polyfill.js", "background.bundle.js"],
     "persistent": true
   },
-  "permissions": [
-    "storage",
-    "notifications",
-    "https://staking.bluzelle.com/*",
-    "https://staging.staking.bluzelle.com/*",
-    "http://integration.staking.bluzelle.com/*",
-    "https://callofdata.bluzelle.com/*",
-    "https://bluzelle.github.io/call-of-data/*"
-  ],
+  "externally_connectable": {
+    "matches": ["http://localhost:3000/*", "file://*"],
+    "ids": ["*"]
+  },
+  "minimum_chrome_version": "63",
   "content_scripts": [
     {
       "matches": [
-        "https://staking.bluzelle.com/*",
-        "https://staging.staking.bluzelle.com/*",
-        "http://integration.staking.bluzelle.com/*",
-        "https://callofdata.bluzelle.com/*",
-        "https://bluzelle.github.io/call-of-data/*"
+        "http://localhost:3000/*",
+        "file://*"
       ],
       "js": ["browser-polyfill.js", "contentScripts.bundle.js"],
       "run_at": "document_start",
