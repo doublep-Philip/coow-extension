@@ -225,7 +225,10 @@ export const RecoverMnemonicPage: FunctionComponent<{
               />
             </React.Fragment>
           ) : null}
-          <AdvancedBIP44Option bip44Option={bip44Option} />
+          {
+            // removes the advanced option, can be reinstated by removing the below condition
+            false ? <AdvancedBIP44Option bip44Option={bip44Option} /> : null
+          }
           <Button
             color="primary"
             type="submit"

@@ -19,17 +19,10 @@
     "scripts": ["browser-polyfill.js", "background.bundle.js"],
     "persistent": true
   },
-  "externally_connectable": {
-    "matches": ["http://localhost:3000/*", "file://*"],
-    "ids": ["*"]
-  },
-  "minimum_chrome_version": "63",
+  "permissions": ["storage", "notifications"],
   "content_scripts": [
     {
-      "matches": [
-        "http://localhost:3000/*",
-        "file://*"
-      ],
+      "matches": ["<all_urls>"],
       "js": ["browser-polyfill.js", "contentScripts.bundle.js"],
       "run_at": "document_start",
       "all_frames": true
