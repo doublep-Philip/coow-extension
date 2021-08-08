@@ -59,10 +59,10 @@ import { InExtensionMessageRequester } from "@keplr-wallet/router";
 window.keplr = new Keplr(manifest.version, new InExtensionMessageRequester());
 
 // Make sure that icon file will be included in bundle
-require("./public/assets/temp-icon.svg");
-require("./public/assets/icon/icon-16.png");
-require("./public/assets/icon/icon-48.png");
-require("./public/assets/icon/icon-128.png");
+require("./public/assets/symbol.svg");
+require("./public/assets/icon/coow-icon-16.png");
+require("./public/assets/icon/coow-icon-48.png");
+require("./public/assets/icon/coow-icon-128.png");
 
 configure({
   enforceActions: "always", // Make mobx to strict mode.
@@ -103,8 +103,8 @@ const StateRenderer: FunctionComponent = observer(() => {
     return (
       <div style={{ height: "100%" }}>
         <Banner
-          icon={require("./public/assets/temp-icon.svg")}
-          logo={require("./public/assets/logo-temp.png")}
+          icon={require("./public/assets/symbol.svg")}
+          logo={require("./public/assets/img/coow-logotype.png")}
           subtitle="Wallet for the Interchain"
         />
       </div>
@@ -113,8 +113,8 @@ const StateRenderer: FunctionComponent = observer(() => {
     return (
       <div style={{ height: "100%" }}>
         <Banner
-          icon={require("./public/assets/temp-icon.svg")}
-          logo={require("./public/assets/logo-temp.png")}
+          icon={require("./public/assets/symbol.svg")}
+          logo={require("./public/assets/img/coow-logotype.png")}
           subtitle="Wallet for the Interchain"
         />
       </div>

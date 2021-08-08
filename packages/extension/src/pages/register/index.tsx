@@ -82,19 +82,9 @@ export const RegisterPage: FunctionComponent = observer(() => {
       <div className={style.logoContainer}>
         <img
           className={style.icon}
-          src={require("../../public/assets/temp-icon.svg")}
+          src={require("../../public/assets/img/coow-logo.png")}
           alt="logo"
         />
-        <div className={style.logoInnerContainer}>
-          <img
-            className={style.logo}
-            src={require("../../public/assets/logo-temp.png")}
-            alt="logo"
-          />
-          <div className={style.paragraph} style={{ marginTop: "10px" }}>
-            Decentralized Storage Network
-          </div>
-        </div>
       </div>
       {registerConfig.render()}
       {registerConfig.isFinalized ? <WelcomePage /> : null}

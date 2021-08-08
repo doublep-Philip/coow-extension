@@ -129,8 +129,8 @@ export const MainPage: FunctionComponent = observer(() => {
       </Card>
       {chainStore.current.walletUrlForStaking ? (
         <Card
-          className={classnames(style.card, "shadow")}
-          style={{ background: "#0d071d" }}
+          className={classnames(style.card, "shadow", "card-staking")}
+          style={{ display: "none", background: "#0d071d" }}
         >
           <CardBody>
             <StakeView />
@@ -139,8 +139,8 @@ export const MainPage: FunctionComponent = observer(() => {
       ) : null}
       {hasTokens ? (
         <Card
-          className={classnames(style.card, "shadow")}
-          style={{ background: "0d071d" }}
+          className={classnames(style.card, "shadow", )}
+          style={{ display: "none" }}
         >
           <CardBody>{<TokensView />}</CardBody>
         </Card>
@@ -148,7 +148,7 @@ export const MainPage: FunctionComponent = observer(() => {
       {chainStore.current.features?.includes("ibc-transfer") ? (
         <Card
           className={classnames(style.card, "shadow")}
-          style={{ background: "#0d071d" }}
+          style={{ display: "none" }}
         >
           <CardBody>
             <IBCTransferView />

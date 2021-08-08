@@ -77,9 +77,9 @@ export const LockPage: FunctionComponent = observer(() => {
         })}
       >
         <Banner
-          icon={require("../../public/assets/temp-icon.svg")}
-          logo={require("../../public/assets/logo-temp.png")}
-          subtitle="Decentralized Storage Network"
+          icon={require("../../public/assets/symbol.svg")}
+          logo={require("../../public/assets/img/coow-logotype.png")}
+          subtitle="Next Wave"
         />
         <Input
           style={{

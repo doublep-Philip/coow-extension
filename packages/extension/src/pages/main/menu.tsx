@@ -75,7 +75,7 @@ export const Menu: FunctionComponent = observer(() => {
       <div>
         <hr className="mx-4 my-1" />
       </div>
-      <div className={styleMenu.footer}>
+      {/* <div className={styleMenu.footer}>
         <a
           className={styleMenu.inner}
           href="https://github.com/bluzelle/blz-extension"
@@ -85,7 +85,7 @@ export const Menu: FunctionComponent = observer(() => {
           <i className="fab fa-github" />
           <FormattedMessage id="main.menu.footer.github" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 });

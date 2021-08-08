@@ -8,12 +8,12 @@ export const MAINNET_REST_ENDPOINT =
 export const MAINNET_REST_CONFIG: AxiosRequestConfig | undefined = undefined;
 
 export const TESTNETPUBLIC_RPC_ENDPOINT =
-  "http://sandbox.sentry.testnet.public.bluzelle.com:26657";
+  "http://3.23.13.122:26657";
 export const TESTNETPUBLIC_RPC_CONFIG:
   | AxiosRequestConfig
   | undefined = undefined;
 export const TESTNETPUBLIC_REST_ENDPOINT =
-  "https://client.sentry.testnet.public.bluzelle.com:1317";
+  "http://3.23.13.122:1317";
 export const TESTNETPUBLIC_REST_CONFIG:
   | AxiosRequestConfig
   | undefined = undefined;
