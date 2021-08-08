@@ -1,6 +1,6 @@
 {
-  "name": "Curium",
-  "description": "Curium is a browser extension wallet for the Bluzelle Network.",
+  "name": "Coow",
+  "description": "Coow is a browser extension wallet for the RIZON Network.",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -26,7 +26,7 @@
     ]
   },
   "keywords": [],
-  "author": "chainapsis",
+  "author": "doublep",
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/webpack": "^4.39.1",

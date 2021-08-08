@@ -153,6 +153,51 @@ export const EmbedChainInfos: ChainInfo[] = [
     coinType: 483,
     features: ["stargate", "crud", "nft"],
   },
+  {
+    rpc: "http://3.23.13.122:26657/",
+    rpcConfig: TESTNETPRIVATE_RPC_CONFIG,
+    rest: "http://3.23.13.122:1317/",
+    restConfig: TESTNETPRIVATE_REST_CONFIG,
+    chainId: "groot-011",
+    chainName: "RIZON Groot TestNet",
+    stakeCurrency: {
+      coinDenom: "uatolo",
+      coinMinimalDenom: "uatolo",
+      coinDecimals: 6,
+      coinGeckoId: "hdac",
+    },
+    walletUrl: "https://staking.bluzelle.com/staking",
+
+    walletUrlForStaking: "https://staking.bluzelle.com/staking",
+
+    bip44: {
+      coinType: 1217,
+    },
+    alternativeBIP44s: [
+      {
+        coinType: 118,
+      },
+    ],
+    bech32Config: Bech32Address.defaultBech32Config("rizon"),
+    currencies: [
+      {
+        coinDenom: "ATOLO",
+        coinMinimalDenom: "uatolo",
+        coinDecimals: 6,
+        coinGeckoId: "hdac",
+      },
+    ],
+    feeCurrencies: [
+      {
+        coinDenom: "ATOLO",
+        coinMinimalDenom: "uatolo",
+        coinDecimals: 6,
+        coinGeckoId: "hdac",
+      },
+    ],
+    coinType: 1217,
+    features: ["stargate", "crud", "nft"],
+  },
 ];
 
 // The origins that are able to pass any permission that external webpages can have.

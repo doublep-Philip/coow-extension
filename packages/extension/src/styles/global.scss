@@ -10,21 +10,21 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,800&display=swap");
 @font-face {
   font-family: Nanum Barun Gothic;
-  src: url(../public/assets/font/NanumBarunGothic.ttf);
+  src: url(../public/assets/font/Roboto-Black.ttf);
   font-weight: normal;
 }
 @font-face {
   font-family: Nanum Barun Gothic;
-  src: url(../public/assets/font/NanumBarunGothicLight.ttf);
+  src: url(../public/assets/font/Roboto-Light.ttf);
   font-weight: 300;
 }
 @font-face {
   font-family: Nanum Barun Gothic;
-  src: url(../public/assets/font/NanumBarunGothicBold.ttf);
+  src: url(../public/assets/font/Roboto-Bold.ttf);
   font-weight: bold;
 }
 
-$font-family-base: "Nunito Sans", sans-serif;
+$font-family-base: "Roboto", sans-serif;
 $body-color: #f0f;
 @import "../../../../node_modules/argon-dashboard-react/src/assets/scss/argon-dashboard-react";
 
@@ -36,7 +36,7 @@ html {
   width: $popup-size-width;
   height: $popup-size-height;
   margin: auto;
-  background-color: #0d071d;
+  background-color: #0d071d
 
   overflow: auto;
 }
