@@ -1,8 +1,7 @@
-# Curium Browser Extension
+# coow Extension
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-> Curium is a browser extension wallet for the Bluzelle Network.
->
+> coow is a chrome extension wallet for the RIZON Network.
 
 ## Build
 
